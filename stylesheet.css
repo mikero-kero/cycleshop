@@ -74,7 +74,7 @@ header {
 .logo {
   height: 35px;
   width: 35px;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
 .header-left {
