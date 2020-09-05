@@ -1,39 +1,48 @@
+/*共通設定*/
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "fantasy";
 }
 
 a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
-  width: 100%;
-  padding: 0 15px;
+  width: 90%;
   margin: 0 auto;
 }
 
+.heading {
+  text-align: center;
+  padding: 20px 0;
+  color: #444444;
+}
+
+/*トップ*/
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(top.png);
+  background-image: url(top.jpg);
   background-size: cover;
-  color: black;
+  color: white;
   text-align: center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
+.top-wrapper h2 {
+  font-size: 20px;
   margin-bottom: 40px;
 }
 
@@ -41,49 +50,46 @@ a {
   text-align: center;
 }
 
-.btn-wrapper a {
-  margin-bottom: 20px;
-}
-
 .btn {
   padding: 8px 24px;
   color: white;
+  background-color: #009900;
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
   text-align: center;
+  box-shadow: 0px 5px #003300;
 }
 
 .btn:hover {
-  opacity: 1;
+  background-color: #006600;
+  cursor: pointer;
 }
 
-.fas {
-  margin-right: 5px;
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
 }
 
+/*ヘッダー*/
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color: rgba(72,72,72,0.9);
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  height: 35px;
-  width: 35px;
-  margin: 15px 0;
-}
-
-.header-left {
+  height: 55px;
+  margin: 5px 0;
   float: left;
 }
 
 .header-right {
   float: right;
-  margin-right: -25px;
 }
 
 .header-right a {
@@ -99,30 +105,41 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
+/*あいさつ*/
 .greet-wrapper {
-  height: 580px;
-  padding-: 100px 0 100px 0;
+  height: 400px;
+  padding: 30px 0 50px 0;
   background-color: #f7f7f7;
   text-align: center;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.greet {
+  line-height: 32px;
+  text-align: left;
+  width: 788px;
+  margin: 0 auto;
 }
 
-.heading h2 {
-  font-weight: normal;
+/*サービス紹介*/
+.service-wrapper {
+  height: 400px;
+  padding: 30px;
 }
 
 .service {
   float: left;
   width: 25%;
+  height: 300px;
+}
+
+.service-icon {
+  height: 80px;
+  width: 80px;
 }
 
 .service p {
   color: black;
+  text-align: center;
 }
 
 .text-contents {
@@ -133,47 +150,48 @@ header {
   color: #b3aeb5;
 }
 
+/*アクセス*/
 .access-wrapper {
-  padding-bottom: 80px;
   text-align: left;
-  margin-bottom: 1px;
+  height: 500px;
+  background-color: rgb(34,49,52);
   position: relative;
 }
 
-.access-wrapper p {
+.access-heading {
+  text-align: center;
+  color: #eeeeee;
+  padding: 20px 0 20px 0;
+}
 
+.access-text {
+  color: white;
+  line-height: 70px;
+  padding-top: 80px;
 }
 
 .ggmap {
-position: right;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .ggmap iframe,
 .ggmap object,
 .ggmap embed {
-position: absolute;
-top: 20px;
-right: 20px;
-width: 35%;
-height: 50%;
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  width: 35%;
+  height: 90%;
 }
 
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+/*問合せフォーム*/
+.form {
+  width: 500px;
+  margin: 0 auto;
+  height: 400px;
 }
 
 .menu-icon {
@@ -188,6 +206,19 @@ footer {
   clear: left;
 }
 
+/*フッター*/
+footer {
+  height: 65px;
+  background-color: #555555;
+}
+
+.footer-logo p {
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*web maxメディアクエリ*/
 @media all and (max-width: 1000px) {
   .lesson {
     width: 50%;
@@ -198,11 +229,9 @@ footer {
     height: 990px;
   }
 
-  footer {
-    text-align: center;
-  }
 }
 
+/*ipad用メディアクエリ*/
 @media all and (max-width: 750px) {
   .top-wrapper h1 {
     font-size: 32px;
@@ -213,6 +242,7 @@ footer {
   }
 }
 
+/*スマホ用メディアクエリ*/
 @media all and (max-width: 670px) {
   .header-right {
     display: none;
