@@ -12,57 +12,58 @@
   <header>
     <div class="container">
       <div class="header-left">
-        <img class="logo" src="aicon.png">
+        <a href="#top">
+        <img class="logo" src="logo.png">
+        </a>
       </div>
       <div class="header-right">
-        <a href="#">あいさつ</a>
-        <a href="#">サービス</a>
-        <a href="#">アクセス</a>
-        <a href="#">お問い合わせ</a>
+        <a href="#greet">あいさつ</a>
+        <a href="#service">サービス</a>
+        <a href="#access">アクセス</a>
+        <a href="#form">お問い合わせ</a>
       </div>
     </div>
   </header>
 
-    <div class="top-wrapper">
+    <div class="top-wrapper" id="top">
       <div class="container">
         <h1>’縄文の里’是川に根付いて40年<br>人情溢れるサービスが魅力です</h1>
         <h2>「サイクルショップ是川」はスズキ系列の自動車の修理・販売店です。<br>
-          自動車保険、自転車の修理も取り扱っております。
+          自動車保険、自転車の修理等も取り扱っております。
         </h2>
-        <div class="btn-wrapper">
-          <a href="#" class="btn form">お問い合わせ</a>
-        </div>
+        <a class="btn form-btn" type="submit" href="#form">お問い合わせはこちら</a>
       </div>
     </div>
-    <div class="greet-wrapper">
+    <div class="greet-wrapper" id="greet">
       <div class="container">
-        <h2>オーナーあいさつ</h2>
-        <p>オーナーの坂本健治と申します。<br>
+        <h2 class="heading">オーナーあいさつ</h2>
+        <p class="greet">オーナーの坂本健治と申します。<br>
           ’縄文の里’として知られる是川で自動車の修理・販売を営んで40年になります。<br>
           確かな技術と良心的な価格設定でお客様の満足と信頼を積み重ねてまいりました。<br>
           昨年からは保険の代理店業務も追加し、よりお客様の生活に寄り添ったサービスを提供しております。<br>
-          工具が揃っておりますので、自転車の修理やボイラーの修理、ちょっとした日常生活での困りごとの相談もお受けしています。<br>
+          自転車の修理やボイラーの修理、ちょっとした日常生活での困りごとの相談もお受けしています。<br>
           車のことや保険のことはもちろん、その他修理や改修のご相談まで、お気軽にお問い合わせください。
         </p>
       </div>
     </div>
-    <div class="service-wrapper">
+    <div class="service-wrapper" id="service">
       <div class="container">
+        <h2 class="heading">サービス内容</h2>
         <div class="services">
           <div class="service">
-            <img src="fix.png">
+            <img class="service-icon" src="fix.png">
             <p>修理</p>
           </div>
           <div class="service">
-            <img src="sell.png">
+            <img class="service-icon" src="sell.png">
             <p>販売</p>
           </div>
           <div class="service">
-            <img src="insurance.png">
+            <img class="service-icon" src="insurance.png">
             <p>保険</p>
           </div>
           <div class="service">
-            <img src="other.png">
+            <img class="service-icon" src="other.png">
             <p>その他</p>
             <ul>
               <li>自転車修理</li>
@@ -72,32 +73,54 @@
         </div>
       </div>
     </div>
-    <div class="access-wrapper">
-      <div class="ggmap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.61181410677085!2d141.50631500647208!3d40.46646693706955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4d3eb1564619%3A0x920efdb8c2a611eb!2z44CSMDMxLTAwMjMg6Z2S5qOu55yM5YWr5oi45biC5aSn5a2X5piv5bed5Lit6IuX5Luj5LiL77yV4oiS77ySIOOCteOCpOOCr-ODq-OCt-ODp-ODg-ODlw!5e0!3m2!1sja!2sjp!4v1598706429339!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-        </iframe>
-      </div>
-      <p>お車でお越しの方</p>
-      <p>八戸駅から</p>
-      <p>バスでお越しの方</p>
-      <p>本八戸駅から是川団地行きのバスに乗って「志民」で降りて徒歩5分</p>
-    </div>
-    <div class="form-wrappar">
+    <div class="access-wrapper" id="access">
       <div class="container">
-        <p>お名前</p>
-        <input type="text" name="name" value="">
-        <p>ご連絡先</p>
-        <input type="text" name="e-mail" value="">
-        <p>お問い合わせ内容</p>
-        <textarea name="in" rows="8" cols="80"></textarea>
+        <h2 class="access-heading">アクセス</h2>
+        <div class="access-text">
+          <ul>
+            <li>お車でお越しの方</li>
+            <li>八戸駅から</li>
+            <li>バスでお越しの方</li>
+            <li>本八戸駅から是川団地行きのバスに乗って「志民」で降りて徒歩5分</li>
+          </ul>
+        </div>
+        <div class="ggmap">
+　         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6985.860478169351!2d141.50018910004735!3d40.467776120658684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4d3eb1564619%3A0x920efdb8c2a611eb!2z44CSMDMxLTAwMjMg6Z2S5qOu55yM5YWr5oi45biC5aSn5a2X5piv5bed5Lit6IuX5Luj5LiL77yV4oiS77ySIOOCteOCpOOCr-ODq-OCt-ODp-ODg-ODlw!5e0!3m2!1sja!2sjp!4v1599229489763!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"  　　　　       tabindex="0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper" id="form">
+      <div class="container">
+        <div class="form-header">
+          <h2 class="heading">お問い合わせ</h2>
+        </div>
+        <div class="form">
+          <form method="POST"
+                action="mailto:inutokaico@gmail.com">
+            <p>お名前</p>
+            <input type="text" name="name">
+            <p>ご連絡先</p>
+            <input type="text" name="e-mail">
+            <p>お問い合わせ内容</p>
+            <textarea name="in" rows="6" cols="65"></textarea>
+            <input type="submit" value="送信" name="go">
+          </form>
+        </div>
       </div>
     </div>
 
   <footer>
     <div class="container">
-      <img class="logo" src="aicon.png">
-      <p class="copyright">©︎ 2020 mikero-kero</p>
+      <div class="footer-logo">
+        <a href="#top">
+        <img class="logo" src="logo.png">
+        </a>
+        <p>©︎ 2020 mikero-kero</p>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
