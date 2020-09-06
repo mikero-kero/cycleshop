@@ -17,7 +17,7 @@ li {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -84,7 +84,8 @@ header {
 
 .logo {
   height: 55px;
-  margin: 5px 0;
+  margin-top: 5px;
+  margin-left: 10px;
   float: left;
 }
 
@@ -105,16 +106,32 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  margin: 20px;
+  display: none;
+}
+
+.menu-icon:active {
+
+}
+
+.clear {
+  clear: left;
+}
+
 /*あいさつ*/
 .greet-wrapper {
-  height: 400px;
-  padding: 30px 0 50px 0;
+  height: 500px;
+  padding: 50px 0 50px 0;
   background-color: #f7f7f7;
   text-align: center;
 }
 
 .greet {
-  line-height: 32px;
+  line-height: 40px;
   text-align: left;
   width: 788px;
   margin: 0 auto;
@@ -122,14 +139,16 @@ header {
 
 /*サービス紹介*/
 .service-wrapper {
-  height: 400px;
-  padding: 30px;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px ;
 }
 
 .service {
   float: left;
   width: 25%;
-  height: 300px;
+  height: 200px;
 }
 
 .service-icon {
@@ -152,7 +171,6 @@ header {
 
 /*アクセス*/
 .access-wrapper {
-  text-align: left;
   height: 500px;
   background-color: rgb(34,49,52);
   position: relative;
@@ -161,19 +179,21 @@ header {
 .access-heading {
   text-align: center;
   color: #eeeeee;
-  padding: 20px 0 20px 0;
+  padding: 30px 0;
+}
+
+.access-bus {
+  line-height: normal;
+  color: white;
 }
 
 .access-text {
+  text-align: left;
   color: white;
   line-height: 70px;
-  padding-top: 80px;
 }
 
 .ggmap {
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
   overflow: hidden;
 }
 
@@ -181,29 +201,18 @@ header {
 .ggmap object,
 .ggmap embed {
   position: absolute;
-  top: 100px;
+  top: 80px;
   right: 10%;
-  width: 35%;
-  height: 90%;
+  height:80%;
+  width: 45%;
 }
 
 /*問合せフォーム*/
 .form {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
-  height: 400px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
+  height: 500px;
+  padding: 50px;
 }
 
 /*フッター*/
@@ -216,71 +225,4 @@ footer {
   height: auto;
   padding: 20px 0;
   text-align: center;
-}
-
-/*web maxメディアクエリ*/
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-}
-
-/*ipad用メディアクエリ*/
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-/*スマホ用メディアクエリ*/
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
 }

@@ -1,0 +1,69 @@
+/*pc-max用*/
+@media all and (max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+/*ipad用メディアクエリ*/
+@media all and (max-width: 846px) {
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .greet {
+    font-size: 15px;
+  }
+}
+
+/*スマホ用メディアクエリ*/
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper .btn {
+    width: 80%;
+  }
+
+  .top-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .greet {
+    font-size: 12px;
+  }
+
+  .service {
+    width: 50%;
+  }
+
+  .message-wrapper .btn {
+    width: 100%;
+  }
+}

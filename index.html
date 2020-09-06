@@ -6,6 +6,7 @@
   <title>サイクルショップ是川</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
 </head>
 
 <body>
@@ -13,9 +14,12 @@
     <div class="container">
       <div class="header-left">
         <a href="#top">
-        <img class="logo" src="logo.png">
+          <img class="logo" src="logo.png">
         </a>
       </div>
+
+      <span class="fa fa-bars menu-icon"></span>
+
       <div class="header-right">
         <a href="#greet">あいさつ</a>
         <a href="#service">サービス</a>
@@ -34,6 +38,7 @@
         <a class="btn form-btn" type="submit" href="#form">お問い合わせはこちら</a>
       </div>
     </div>
+
     <div class="greet-wrapper" id="greet">
       <div class="container">
         <h2 class="heading">オーナーあいさつ</h2>
@@ -46,6 +51,7 @@
         </p>
       </div>
     </div>
+
     <div class="service-wrapper" id="service">
       <div class="container">
         <h2 class="heading">サービス内容</h2>
@@ -73,23 +79,26 @@
         </div>
       </div>
     </div>
+
     <div class="access-wrapper" id="access">
       <div class="container">
         <h2 class="access-heading">アクセス</h2>
-        <div class="access-text">
+        <div>
           <ul>
-            <li>お車でお越しの方</li>
-            <li>八戸駅から</li>
-            <li>バスでお越しの方</li>
-            <li>本八戸駅から是川団地行きのバスに乗って「志民」で降りて徒歩5分</li>
+            <li class="access-text">◎お車でお越しの方</li>
+            <li class="access-text">　八戸駅から</li>
+            <li class="access-text">◎バスでお越しの方</li>
+            <li　class="access-bus">　本八戸駅から是川団地行きのバスに乗って<br>
+              「志民」で降りて徒歩5分</li>
           </ul>
         </div>
         <div class="ggmap">
-　         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6985.860478169351!2d141.50018910004735!3d40.467776120658684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4d3eb1564619%3A0x920efdb8c2a611eb!2z44CSMDMxLTAwMjMg6Z2S5qOu55yM5YWr5oi45biC5aSn5a2X5piv5bed5Lit6IuX5Luj5LiL77yV4oiS77ySIOOCteOCpOOCr-ODq-OCt-ODp-ODg-ODlw!5e0!3m2!1sja!2sjp!4v1599229489763!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"  　　　　       tabindex="0">
+　         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6985.860478169351!2d141.50018910004735!3d40.467776120658684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b4d3eb1564619%3A0x920efdb8c2a611eb!2z44CSMDMxLTAwMjMg6Z2S5qOu55yM5YWr5oi45biC5aSn5a2X5piv5bed5Lit6IuX5Luj5LiL77yV4oiS77ySIOOCteOCpOOCr-ODq-OCt-ODp-ODg-ODlw!5e0!3m2!1sja!2sjp!4v1599229489763!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"  　　　　       tabindex="0">
           </iframe>
         </div>
       </div>
     </div>
+
     <div class="form-wrapper" id="form">
       <div class="container">
         <div class="form-header">
@@ -101,7 +110,7 @@
             <p>お名前</p>
             <input type="text" name="name">
             <p>ご連絡先</p>
-            <input type="text" name="e-mail">
+            <input type="text" name="e-mail or tell">
             <p>お問い合わせ内容</p>
             <textarea name="in" rows="6" cols="65"></textarea>
             <input type="submit" value="送信" name="go">
@@ -121,6 +130,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>
