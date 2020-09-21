@@ -4,16 +4,28 @@
     max-width: 1000px;
     width: 100%;
   }
-}
 
 /*ipad用メディアクエリ*/
 @media all and (max-width: 846px) {
-  .header-right {
+  .submenu {
     display: none;
   }
 
   .menu-icon {
     display: block;
+  }
+
+  .submenu {
+    clear: left;
+  }
+
+  .widthMenu a {
+    width: 146px;
+    text-align: center;
+  }
+
+  .menu-list {
+    background-color: rgba(72,72,72,0.9);
   }
 
   .top-wrapper h1 {
@@ -25,13 +37,29 @@
   }
 
   .greet {
-    font-size: 15px;
+    font-size: 14.7px;
+    width: 670px;
   }
-}
+
+  .access-wrapper {
+    height: 1000px;
+  }
+
+  .access-text {
+    left: 20%;
+  }
+
+  .ggmap iframe {
+    position: absolute;
+    top: 550px;
+    left: 20%;
+    height: 35%;
+    width: 60%;
+  }
 
 /*スマホ用メディアクエリ*/
 @media all and (max-width: 670px) {
-  .header-right {
+  .submenu {
     display: none;
   }
 
@@ -44,7 +72,7 @@
   }
 
   .top-wrapper h1 {
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .top-wrapper h2 {
@@ -56,7 +84,12 @@
   }
 
   .greet {
-    font-size: 12px;
+    font-size: 10px;
+    width: 460px;
+  }
+
+  .service-wrapper {
+    height: 700px;
   }
 
   .service {
@@ -66,4 +99,5 @@
   .message-wrapper .btn {
     width: 100%;
   }
+
 }
